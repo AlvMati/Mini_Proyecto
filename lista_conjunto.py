@@ -57,18 +57,18 @@
 
 #print(conjunto_ab) 
 
-#diccionario={}
-#texto=input('Ingrese un texto por favor: ')
+# diccionario={}
+# texto=input('Ingrese un texto por favor: ')
 
-#texto_2=texto.lower() #para pasar el texto a minusculas 'upper'
+# texto_2=texto.lower() #para pasar el texto a minusculas 'upper'
 
-#for i in texto:
-#    if i != ' ':
-#        if i in diccionario:
-#            diccionario[i] += 1
-#        else:
-#            diccionario[i] = 1 
+# for i in texto:
+#     if i != ' ':
+#         if i in diccionario:
+#             diccionario[i] += 1
+#         else:
+#             diccionario[i] = 1 
 
-#print(diccionario)
+# print(diccionario)
 
 #---------------------------------------------------
