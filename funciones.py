@@ -45,17 +45,17 @@
 # dicha función.
 
 
-texto = str(input('Ingrese texto: '))
+# texto = str(input('Ingrese texto: '))
 
-def convertir_espacios(texto):
-    for i in texto:
-        print(i)
+# def convertir_espacios(texto):
+#     for i in texto:
+#         print(i)
         
-        if i != ' ':
-            i = ' '
-            print(i)
+#         if i != ' ':
+#             i = ' '
+#             print(i)
 
-convertir_espacios(texto)
+# convertir_espacios(texto)
 
 
 # import datetime

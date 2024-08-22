@@ -1,16 +1,16 @@
 # mi_lista =[12, 45, 100, 1, 61, 98, 50, 25, 10, 20, 31]
 
-# esto imprime la lista NO ordenada
+# # esto imprime la lista NO ordenada
 # print("Lista desordenada: ", mi_lista)
 
-# Ordenemos la lista
+# # Ordenemos la lista
 # mi_lista.sort()
 
-# aquí tendremos la lista ordenada
+# # aquí tendremos la lista ordenada
 # print("Lista Ordenada: ", mi_lista)
 
 # print(mi_lista[2:6])
-# mi_lista.reverse
+# # mi_lista.reverse
 
 # mi_lista.append("hola")
 # print(mi_lista)
