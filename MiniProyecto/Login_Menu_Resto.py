@@ -56,20 +56,78 @@ def ingresar():
 
                 row+=1
 
-            ventana1.pack(expand=1)
+            ventana1.pack()
         
-        barra_menu = tk.Menu(ventana)
-        ventana.config(menu=barra_menu)
+        # VENTANAS DE LOS MENUS--- COLORES DISEÑO
+        def entrada():
+            ventanita = tk.Tk()
+            ventanita.title("Entradas")
+            ventanita.geometry("600x400")
+            ventanita.config(bg="orange")
+            tk.Label(ventanita,text= "Si se complica mucho con listas, se agrega imagen de la carta",bg="white", font=("Arial", 20)).grid(padx=100 , pady= 150)
+            ventanita.pack()
+        
 
-        menu_comidas = tk.Menu(barra_menu)
-        barra_menu.add_cascade(label ='Bebidas', font=("Arial", 8), menu=menu_comidas)
-        barra_menu.add_cascade(label ='Entradas', font=("Arial", 8), menu=menu_comidas)
-        barra_menu.add_cascade(label ='Plato Principal', font=("Arial", 8), menu=menu_comidas)
-        barra_menu.add_cascade(label ='Postre', font=("Arial", 8), menu=menu_comidas)
+        def plato():
+            ventanita = tk.Tk()
+            ventanita.title("PlatoPrincipal")
+            ventanita.geometry("600x400")
+            ventanita.config(bg="red")
+            tk.Label(ventanita,text= "Si se complica mucho con listas, se agrega imagen de la carta",bg="white", font=("Arial", 20)).grid(padx=100 , pady= 150)
+            ventanita.pack()
 
-        menu_comidas.add_command(label= "Seleccionar Menues", font=("Arial", 8),command=solo_menu)
-        menu_comidas.add_command(label= "Otros", font=("Arial", 8),command=solo_menu)
-        ventana.pack()
+
+        def bebidas():
+            ventanita = tk.Tk()
+            ventanita.title("Bebidas")
+            ventanita.geometry("600x400")
+            ventanita.config(bg="olive")
+            tk.Label(ventanita,text= "Si se complica mucho con listas, se agrega imagen de la carta",bg="white", font=("Arial", 20)).grid(padx=100 , pady= 150)
+            ventanita.pack()
+        
+        def postre():
+            ventanita = tk.Tk()
+            ventanita.title("Postre")
+            ventanita.geometry("600x400")
+            ventanita.config(bg="LightGreen")
+            tk.Label(ventanita,text= "Si se complica mucho con listas, se agrega imagen de la carta",bg="white", font=("Arial", 20)).grid(padx=100 , pady= 150)
+            ventanita.pack()
+        
+        def reservas():
+            pass
+        
+        menu = tk.Menu(ventana)
+        ventana.config(menu=menu)
+
+        
+        
+        menu_entrada = tk.Menu(menu)
+        menu_plato = tk.Menu(menu)
+        menu_bebidas = tk.Menu(menu)
+        menu_postre = tk.Menu(menu)
+        reserva = tk.Menu(menu)
+        
+        #CASCADA BEBIDA / ENTRADA / PLATO PRINCIPAL / POSTRE
+       
+        menu.add_cascade(label ='Entradas', font=("Arial", 8), menu=menu_entrada)
+        menu.add_cascade(label ='Plato Principal', font=("Arial", 8), menu=menu_plato)
+        menu.add_cascade(label ='Bebidas', font=("Arial", 8), menu=menu_bebidas)
+        menu.add_cascade(label ='Postre', font=("Arial", 8), menu=menu_postre)
+        # menu.add_cascade(label ='Reservas', font=("Arial", 8), menu=reserva)
+
+        menu_bebidas.add_command(label = "Con Alcohol", font=("Times", 8), command=bebidas)
+        menu_bebidas.add_command(label = "Sin Alcohol", font=("Times", 8), command=bebidas)
+        
+        menu_entrada.add_command(label = "Menu Niños", font=("Arial", 8), command=entrada)
+        menu_entrada.add_command(label = "Todo", font=("Arial", 8), command=entrada)
+
+        menu_plato.add_command(label = "Platos Tradicionales", font=("Arial", 8), command=plato)
+        menu_plato.add_command(label = "Platos Gourmet", font=("Arial", 8), command=plato)
+        menu_plato.add_command(label = "Platos Veganos", font=("Arial", 8), command=plato)
+        
+        menu_postre.add_command(label = "Postres Frios", font=("Arial", 8), command=postre)
+        menu_postre.add_command(label = "Postres Calientes", font=("Arial", 8), command=postre)    
+    
     else:
         messagebox.showerror("Error", "Tenes que registrarte!")
         
@@ -150,7 +208,5 @@ boton_ingresar.pack()
 
 boton_registro = tk.Button(ventana_login, text='Registrate', command=registro)
 boton_registro.pack()
-
-
 
 ventana_login.mainloop()
