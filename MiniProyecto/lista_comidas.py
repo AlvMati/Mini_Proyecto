@@ -1,4 +1,4 @@
-menus=[
+menu_comida=[
 {
     "tipo": "casero",
     "nombre":"Pasta al pesto",
@@ -46,23 +46,118 @@ menus=[
 }
 ]
 
-# print(menus[1].get("nombre"))    
+menu_bebida=[
+{
+    "tipo": "Con alcohol",
+    "nombre":"Campari: naranja amarga, aguardiente y jarabe azucarado",
+    "precio": 3000
+},
+{
+    "tipo": "Con alcohol",
+    "nombre":"Martini",
+    "precio": 2500
+},
+{
+    "tipo": "Con alcohol",
+    "nombre":"Ginebra y vermú",
+    "precio": 3500
+},
+{
+    "tipo": "Sin alcohol",
+    "nombre":"Limonada: Limón, azucar y agua",
+    "precio": 3000
+},
+{
+    "tipo": "Sin alcohol",
+    "nombre":"Licuado: Zumo de fruta, agua y azucar",
+    "precio": 2000
+},
+{
+    "tipo": "Sin alcohol",
+    "nombre":"Mojito: Lima, menta y azucar",
+    "precio": 4000
+},
+]
 
+menu_entrada=[
+{"tipo": "niño", 
+ "nombre": "Brochetas de fruta", 
+ "precio": 3500
+ },
 
+{"tipo": "niño",
+  "nombre": "Mini hamburguesas de pollo",
+  "precio": 4000
+},
 
+{"tipo": "niño", 
+ "nombre": "Nuggets de pollo", 
+ "precio": 3500
+},
 
-# self.ventana_comida = tk.Tk()
-# self.ventana_comida.config(bg="green")
-# self.etiqueta1 = tk.Label(ventana_comida,text= "comida 1",bg="yellow", font=("Arial", 8)).grid(row=2, column=1)
-# self.texto1= tk.Entry(ventana_comida,bg="grey").grid(row=3, column=2)
-# self.etiqueta2 = tk.Label(ventana_comida,text= "comida 2",bg="yellow", font=("Arial", 8)).grid(row=3, column=1)
-# self.texto2 = tk.Entry(ventana_comida,bg="grey").grid(row=3, column=2)
-# self.etiqueta3 = tk.Label(ventana_comida,text= "comida 3",bg="yellow", font=("Arial", 8)).grid(row=4, column=1)
-# self.texto3= tk.Entry(ventana_comida,bg="grey").grid(row=3, column=2)
-# self.ventana_comida.pack()
-# self.etiqueta1.pack()
-# self.etiqueta2.pack()
-# self.etiqueta3.pack()
-# self.texto1.pack()
-# self.texto2.pack()
-# self.texto3.pack()
+{"tipo": "niño", 
+ "nombre": "Macarrones con queso", 
+ "precio": 4200
+},
+    
+{"tipo": "niño",
+ "nombre": "Mini pizza",
+ "precio": 3000
+},
+
+{"tipo": "adulto", 
+ "nombre": "Ensalada César", 
+ "precio": 4500
+},
+  
+{"tipo": "adulto", 
+ "nombre": "Sopa de cebolla francesa", 
+ "precio": 4500
+},
+
+{"tipo": "adulto", 
+ "nombre": "Bruschettas variadas",
+ "precio": 4000
+},
+
+{"tipo": "adulto",
+ "nombre": "Empanadas argentinas", 
+ "precio": 3500
+ },
+{"tipo": "adulto", 
+ "nombre": "Tabla de quesos y fiambres",
+ "precio": 5500}
+]
+
+menu_postre=[
+{
+    "tipo": "Frío",
+    "nombre":"Helado",
+    "precio": 3000
+},
+{
+    "tipo": "Frío",
+    "nombre":"Torta de banana split",
+    "precio": 4000
+},
+{
+    "tipo": "Frío",
+    "nombre":"Torta óreo helada",
+    "precio": 3500
+},
+{
+    "tipo": "Caliente",
+    "nombre":"Coulant de chocolate",
+    "precio":3500
+},
+{
+    "tipo": "Caliente",
+    "nombre":"Coulant de chocolate",
+    "precio":2500
+},
+{
+    "tipo": "caliente",
+    "nombre":"Pastel de manzana",
+    "precio": 5500
+}
+]
